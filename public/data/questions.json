@@ -1,0 +1,302 @@
+QuizData = [
+  {
+    "question": "What does a transformer do?",
+    "choices": [
+      {"a1": "Transforms volts into ohms."},
+      {"a2": "Transforms electricity into higher or lower level voltage."},
+      {"a3": "Transforms a bushing into a coil."},
+      {"a4": "Transforms natural resources into electricity."}
+    ],
+    "answer": [2]
+  },
+  {
+    "question": "A padmount transformer is a ?",
+    "choices": [
+      {"a1": "ground mounted power distribution transformer mounted on concrete."},
+      {"a2": "tranformer that is on the pole."},
+      {"a3": "transformer that's behind a fence."},
+      {"a4": "system attatched to a transmission line to boost signal."}
+    ],
+    "answer": [1]
+  },
+  {
+    "question": "Difference between three phase and single phase system?",
+    "choices": [
+      {"a1": "Three phase system is normally used for industrial."},
+      {"a2": "Three phase is used for distrubution system."},
+      {"a3": "Three phase is used to feed padmount transformer."},
+      {"a4": "Three phase has higher efficiency."}
+    ],
+    "answer": [1,4]
+  },
+  {
+    "question": "What is the process of a power system?",
+    "choices": [
+      {"a1": "Sub Station, Generation, Distibution, Transmisission."},
+      {"a2": "Distribution, Transmission, Sub station, Generation."},
+      {"a3": "Generation, Transmission, Sub station, Distribution."},
+      {"a4": "Transmission, Sub Station, Generation, Distribution."}
+    ],
+    "answer": [3]
+  },
+  {
+    "question": "Transmission voltage usually range from..",
+    "choices": [
+      {"a1": "146kv 1000kv"},
+      {"a2": "46kv to 565kv"},
+      {"a3": "69kv to 765kv"},
+      {"a4": "100kv to 800kv"}
+    ],
+    "answer": [3]
+  },
+  {
+    "question": "What are coil taps used for?",
+    "choices": [
+      {"a1": "To adjust the voltage output from a transformer."},
+      {"a2": "To help regulate the switches in a Sub Station."},
+      {"a3": "To aid in grounding the cable."},
+      {"a4": "To keep track of power being used."}
+    ],
+    "answer": [1]
+  },
+  {
+    "question": "Where is electrical power generated?",
+    "choices": [
+      {"a1": "Power Plant."},
+      {"a2": "Sub Station."},
+      {"a3": "Transmission Plant."},
+      {"a4": "Distribution Station."}
+    ],
+    "answer": [1]
+  },
+  {
+    "question": "When is electricity in it's most powerful form?",
+    "choices": [
+      {"a1": "When leaving the Power Plant."},
+      {"a2": "When entering Distribution."},
+      {"a3": "When Sub Station is operating over 400kv."},
+      {"a4": "When running underground."}
+    ],
+    "answer": [1]
+  },
+  {
+    "question": "What are the basic voltages when electricity reaches your house?",
+    "choices": [
+      {"a1": "100 or 400"},
+      {"a2": "69 or 120"},
+      {"a3": "50 or 100"},
+      {"a4": "120 or 240"}
+    ],
+    "answer": [4]
+  },
+  {
+    "question": "DC current is current that...",
+    "choices": [
+      {"a1": "flows in multiple directions ranging in degrees."},
+      {"a2": "flows back and forth."},
+      {"a3": "flows in increments."},
+      {"a4": "only flows in one direction."}
+    ],
+    "answer": [4]
+  },
+  {
+    "question": "Conductors allow for the easy flow of electricity and insulators...",
+    "choices": [
+      {"a1": "add to conductors by securing them and boosting signal."},
+      {"a2": "protect and does not allow for the easy flow of electricity."},
+      {"a3": "open additional pathways to transformers."},
+      {"a4": "create magnetized fields for better radio waves."}
+    ],
+    "answer": [2]
+  },
+  {
+    "question": "An electron has a positive or negative charge?",
+    "choices": [
+      {"a1": "positive"},
+      {"a2": "negative"},
+      {"a3": "neutral"},
+      {"a4": "both"}
+    ],
+    "answer": [2]
+  },
+  {
+    "question": "An Ohm is the standard unit for measuring....",
+    "choices": [
+      {"a1": "how many watts."},
+      {"a2": "resistance to a flow of an eletrical current."},
+      {"a3": "how many amps were provided to a circuit."},
+      {"a4": "how many volts there are."}
+    ],
+    "answer": [2]
+  },
+  {
+    "question": "Transmission lines are usually made up of...",
+    "choices": [
+      {"a1": "pvc."},
+      {"a2": "gold."},
+      {"a3": "bare aluminum or copper."},
+      {"a4": "silver."}
+    ],
+    "answer": [3]
+  },
+  {
+    "question": "Current is ...",
+    "choices": [
+      {"a1": "movement of electricity along a conductor."},
+      {"a2": "movement of electricity along a insulator."},
+      {"a3": "the blockage of electricity."},
+      {"a4": "magnetizing electricity."}
+    ],
+    "answer": [1]
+  },
+  {
+    "question": "What is electricty?",
+    "choices": [
+      {"a1": "The flow of current to Ohms."},
+      {"a2": "The flow of electrons from one atom to another."},
+      {"a3": "The flow of protons from one atom to another."},
+      {"a4": "The magnetization of earth and metal."}
+    ],
+    "answer": [2]
+  },
+  {
+    "question": "A ____ is a device which taps electrical energy from the electrical power system.",
+    "choices": [
+      {"a1": "load"},
+      {"a2": "reciever"},
+      {"a3": "transmitter"},
+      {"a4": "coil"}
+    ],
+    "answer": [1]
+  },
+  {
+    "question": "In a Generation System electricity is produced or generated by the...",
+    "choices": [
+      {"a1": "turning of turbines."},
+      {"a2": "transformers."},
+      {"a3": "transmission lines."},
+      {"a4": "the coils attatched to transmission lines."}
+    ],
+    "answer": [1]
+  },
+  {
+    "question": "______ is usually done in three phase and Distribution in single phase.",
+    "choices": [
+      {"a1": "Transmisission"},
+      {"a2": "A transformer."},
+      {"a3": "A load."},
+      {"a4": "A Secondary."}
+    ],
+    "answer": [1]
+  },
+  {
+    "question": "During Transmission, ...",
+    "choices": [
+      {"a1": "voltage is transformed into a lower voltage."},
+      {"a2": "Distribution is transformed to high voltage."},
+      {"a3": "initial voltage is transformed up to very high voltage."},
+      {"a4": "high voltage is needed for long distances."}
+    ],
+    "answer": [3,4]
+  },
+  {
+    "question": "Voltage is ...",
+    "choices": [
+      {"a1": "measured in amps."},
+      {"a2": "that force that is generated to cause current to flow in a circuit."},
+      {"a3": "the resistance of a current."},
+      {"a4": "high voltage is needed for long distances."}
+    ],
+    "answer": [2]
+  },
+  {
+    "question": "In the Generation System, it converts _____ energy to ______ energy.",
+    "choices": [
+      {"a1": "Mechanical, Electrical"},
+      {"a2": "Kinetic, Mechanical."},
+      {"a3": "Mechanical, Surface"},
+      {"a4": "Electrical, Mechanical"}
+    ],
+    "answer": [1]
+  },
+  {
+    "question": "Padmount transformers are used with ...",
+    "choices": [
+      {"a1": "Transmission lines to help distribute power fo residential usage."},
+      {"a2": "traps for backup power generation."},
+      {"a3": "coils to help facilitate commercial distribution."},
+      {"a4": "underground electrical power Distribution lines."}
+    ],
+    "answer": [4]
+  },
+  {
+    "question": "What increases the voltage of generated electricity?",
+    "choices": [
+      {"a1": "Transmission lines."},
+      {"a2": "step-down transformers."},
+      {"a3": "Distributed primary lines."},
+      {"a4": "Step-up transformers."}
+    ],
+    "answer": [4]
+  },
+  {
+    "question": "Transmission lines transmit electricity over long distances and ______ lines are for short distances and are used locally.",
+    "choices": [
+      {"a1": "Distributed"},
+      {"a2": "Circular"},
+      {"a3": "Figure 8"},
+      {"a4": "Mechanical."}
+    ],
+    "answer": [1]
+  },
+  {
+    "question": "After transmission lines a ______ transformer is used.",
+    "choices": [
+      {"a1": "Tickdown"},
+      {"a2": "Uptick"},
+      {"a3": "Step-down"},
+      {"a4": "Symetrical"}
+    ],
+    "answer": [3]
+  },
+  {
+    "question": "The Electric Power System ....",
+    "choices": [
+      {"a1": "is a Network of Sub Stations, Transmission lines, Generated and Distributed power systems that compose the eletrical grid."},
+      {"a2": "is a Network of eletrical components used to supply and transmit, and use electric power."},
+      {"a3": "is a Network composed of cable that runs over-head or underground to different types of stations to connect our power."},
+      {"a4": "all of the above."}
+    ],
+    "answer": [4]
+  },
+  {
+    "question": "What do Bushings Do?",
+    "choices": [
+      {"a1": "Provide electrical resistance that insulates power lines from transformer enclosures."},
+      {"a2": "Are attatached to the switch located inside the Sub Station and helps to regulate oil."},
+      {"a3": "Helps to keep a consistant balance in of current when electricity is being generated."},
+      {"a4": "Helps power the turbines electric generation process."}
+    ],
+    "answer": [1]
+  },
+  {
+    "question": "Distribution systems typically operate in a range of ...",
+    "choices": [
+      {"a1": "4kv to 46kv"},
+      {"a2": "26kv to 86kv"},
+      {"a3": "84kv to 164kv"},
+      {"a4": "32kv to 64kv"}
+    ],
+    "answer": [1]
+  },
+  {
+    "question": "After taking the assesment how do you think did",
+    "choices": [
+      {"a1": "bad"},
+      {"a2": "ok"},
+      {"a3": "good"},
+      {"a4": "excellent"}
+    ],
+    "answer": [0]
+  }
+];

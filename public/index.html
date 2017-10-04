@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>quiz test</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="content">
+
+  <link rel="stylesheet" href="css/quiz.css">
+
+
+</head>
+
+<body>
+  <div class="sign-in" id="sign-in">
+
+  <div class="welcome" id="getWelcome">
+    <h1>Eletrical Grid Assessment</h1>
+    <div class="click-to-sign-in" id="getSignIn">
+      <p>click to</p>
+      <h3>Sign in</h3>
+    </div>
+  <div class="fade-class"></div>
+  </div>
+
+  <div class="signIn-Form-Container" id="signInForm">
+
+    <h2 class="headingH2">Info</h2>
+    <p class="error" id="error"></p>
+    <form id="formSignIn" autocomplete="off">
+      <input type="text" name="nameInput" placeholder="first name" id="nameInput">
+      <input type="text" name="nameInput2" placeholder="last name" id="nameInput2">
+      <input type="email" name="emailInput" placeholder="email" id="emailInput">
+      <input type="text" name="einInput" placeholder="ein number" id="einInput">
+      <input type="submit" class="btn" id="proceed" value="proceed" />
+    </form>
+  </div>
+</div>
+
+<div class="asses-info" id="assesment-info">
+  <h1>Basic Power Grid Assesment</h1>
+
+  <div class="container">
+  <h3>Guidelines</h3>
+  <p>
+During this assesment you are not allowed to click the back button or refresh the page. if you leave the field
+blank and click the next button it will count as a 0 for that paticular answer. This is just to assess the areas that you
+need to work on so that improvement can be made.
+</p>
+  <h3>Policy</h3>
+  <p>
+This is just to assist you or get you familiar with the different aspects one might encounter as far as positions working
+around or with electrical utilities. Your information is logged only to quantify and add to the census data of people
+interested in careers in the electrical field.
+Once you have read this you can click the "take assement" button below.
+  </p>
+  <button class="btn" id="getQuiz">take assesment</button>
+  </div>
+</div>
+
+<div class="quiz" id="quiz">
+  <div class="quiz-questions" id="quizQuestions">
+    <div class="quiz-q" >
+      <h2 id="quiz-question"></h2>
+    </div>
+    <hr>
+    <form class="quizStyle">
+      <div class="slectAnswer">
+        <input type="checkbox" name="answer1" id="choice1" value="1" class="checkbox" label>
+        <label for="choice1">
+      </div>
+      <div>
+        <p id="choice1-choice" class="choice"></p>
+        <br>
+      </div>
+      <div class="slectAnswer">
+        <input type="checkbox" name="answer2" id="choice2" value="2" class="checkbox">
+          <label for="choice2">
+      </div>
+      <div>
+          <p id="choice2-choice" class="choice"></p>
+        <br>
+      </div>
+      <div class="slectAnswer">
+        <input type="checkbox" name="answer3" id="choice3" value="3" class="checkbox">
+          <label for="choice3">
+      </div>
+      <div>
+          <p id="choice3-choice" class="choice"></p>
+        <br>
+      </div>
+      <div class="slectAnswer">
+        <input type="checkbox" name="answer4" id="choice4" value="4" class="checkbox">
+          <label for="choice4">
+      </div>
+      <div>
+          <p id="choice4-choice" class="choice"></p>
+        <br>
+      </div>
+      <div class="correct">correct</div>
+      <input type="submit" value="Next" class="answer-button" id="getQuestion">
+    </form>
+  </div>
+</div>
+
+<div class="finish" id="finish">
+  <div class="finish-container">
+    <div class="finish-card">
+      <h1>Thank You For Taking the Assessment</h1>
+      <h3 id="score"></h3>
+    </div>
+  </div>
+</div>
+  <script src="data/questions.json"></script>
+  <script src="js/quiz.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+{
+  "name": "electric-grid-basic",
+  "version": "1.0.0",
+  "description": "A basic Assesment of the Power or Electrical grid",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "author": "Alonza Thompson",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.15.5",
+    "nodemailer": "^4.1.1"
+  }
+}

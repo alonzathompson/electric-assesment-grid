@@ -1,0 +1,411 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  overflow-x: hidden;
+}
+.sign-in{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: salmon;
+  overflow-x: hidden;
+  background:
+    /* top, transparent red, faked with gradient */
+    linear-gradient(
+      rgba(250, 128, 114, 0),
+      rgba(250, 128, 114, 1)
+    ),
+    /* bottom, image */
+    url(../images/energy.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.fade-class{
+  position: fixed;
+  top:0;
+  left: 0;
+  width:100%;
+  height: 100%;
+  background-color: rgba(250,128,114,0.5);
+  z-index: -1;
+}
+
+.asses-info{
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 10;
+  word-wrap: normal;
+  background-color: #e5e5e5;
+  overflow-x: hidden;
+}
+
+
+.quiz{
+  display: none;
+  position: absolute;
+  font-size: 1rem;
+  width: 100%;
+  height: 100%;
+  z-index: 20;
+  background-color: lightblue;
+  background:
+    /* top, transparent red, faked with gradient */
+    linear-gradient(
+      rgba(255,140,0, 0.45),
+      rgba(255,140,0, 0.45)
+    ),
+    /* bottom, image */
+    url(../images/cables.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.finish{
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 30;
+  background-color: lightgreen;
+  background:
+    /* top, transparent red, faked with gradient */
+    linear-gradient(
+      rgba(255,140,0, 0.45),
+      rgba(255,140,0, 0.45)
+    ),
+    /* bottom, image */
+    url(../images/finish.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.welcome{
+  width: 60%;
+  height: 500px;
+  text-align: center;
+  margin: 120px auto;
+  margin-left: -30%;
+  font-size: 3em;
+  line-height: 1.8em;
+  position: absolute;
+  z-index: 5;
+  left: 50%;
+  text-shadow: 1px 2px rgba(30,30,30, 0.1);
+}
+
+.click-to-sign-in{
+  margin-top: 40px;
+  line-height: 0.5px;
+  cursor: pointer;
+}
+
+.click-to-sign-in:hover {
+  color: #e1e1e1;
+}
+
+.click-to-sign-in:active {
+  transform: translateY(4px);
+}
+
+.signIn-Form-Container{
+  display: none;
+  flex-direction: column;
+  width: 80%;
+  position: relative;
+  z-index: 8;
+  margin: 60px auto;
+
+  border-radius: 2.5%;
+  background-color: rgba(220,220,220,.8);
+  box-shadow: 0 4px 6px rgba(10,10,10, 0.8);
+
+  animation: signInForm 0.3s ease-in;
+}
+
+.error{
+  display: none;
+  height: 50px;
+  width: 90%;
+  margin: 5px auto;
+  padding-top: 1em;
+  text-align: center;
+  background-color:red;
+  box-shadow: inset 1px 2px 4px rgba(5,5,5,0.5);
+}
+
+#formSignIn{
+  overflow-x: hidden;
+}
+
+#formSignIn input[type=text]{
+  font-size: 2rem;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: rgba(0,0,0,0);
+  border: none;
+  border-bottom: 2px solid #717171;
+  outline: none;
+  width: 96%;
+  height: 25px;
+}
+
+#formSignIn input[type=email]{
+  font-size: 2rem;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: rgba(0,0,0,0);
+  border: none;
+  border-bottom: 2px solid #717171;
+  outline: none;
+  width: 96%;
+  height: 25px;
+}
+
+#formSignIn input[type=email]:focus{
+  background-color: none;
+}
+
+.headingH2{
+  font-size: 2em;
+  color: #272721;
+  text-align: center;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+.btn{
+  cursor: pointer;
+    font-size: 1.5rem;
+    width: 150px;
+    position: relative;
+    padding: 10px;
+    margin: 50px auto;
+    margin-left: -75px;
+    left: 50%;
+    border-radius: 5%;
+    border: 1px solid #666;
+    box-shadow: 2px 2px 6px rgba(10,10,10,0.5);
+}
+
+.btn:active{
+  transform: translateY(4px);
+}
+
+.asses-info h1{
+  text-align: center;
+}
+
+.container {
+  font-size: 1.5rem;
+  padding: 0 10% 0 10%;
+  line-height: 1.5em;
+  text-align: justify;
+}
+
+.quiz-questions{
+  padding-top: 30px;
+  font-size: 1.5rem;
+  width: 80vw;
+  margin: 4% auto;
+  background-color: #e5e5e5;
+  box-shadow: 0px 2px 5px rgba(10,10,10,0.5);
+  transition: width 2s ease 1s;
+}
+
+.quizStyle{
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-row-gap: 15px;
+}
+
+.quiz-q{
+  padding: 5px;
+  text-align: center;
+}
+
+input[type=checkbox] + label {
+	display: block;
+}
+
+input[type=checkbox] {
+  visibility: hidden;
+}
+
+input[type=checkbox] + label:before {
+  display: inline-block;
+	content: "\2714";
+  border: 0.3em solid #c1c1c1;
+	width: 1em;
+	height: 1em;
+	border-radius: 50%;
+	cursor: pointer;
+	position: relative;
+  padding-left: 0.2em;
+  padding-bottom: 0.3em;
+  margin-right: 2em;
+	top: -1.5em;
+	left: 20px;
+	z-index: 16;
+  color: transparent;
+	box-shadow:inset 0px 1px 3px rgba(0,0,0,0.5);
+}
+
+input[type=checkbox]:checked + label:before{
+  background-color: "MediuSeaGreen";
+  color: #333;
+}
+
+.answer-button{
+  position: relative;
+  cursor: pointer;
+  width: 100px;
+  height: 50px;
+  left: 50%;
+  margin: 20px 0px 20px -50px;
+  z-index: 12;
+}
+
+.choice {
+  display: inline;
+}
+
+.correct{
+  display: none;
+  height: 50px;
+  padding: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  line-height: 50px;
+  background-color: green;
+}
+
+.selectAnswer{
+  margin-top: 50px;
+  padding: 20px;
+}
+
+.finish-container{
+  width: 80%;
+  margin: 100px auto;
+  background-color: rgba(230,230,230, 0.9);
+  border: 1px solid rgba(240,240,240, 0.8);
+  box-shadow: 1px 2px 4px rgba(240,240,240, 0.8);
+}
+
+.finish-container h1{
+  text-align: center;
+}
+
+#score{
+  font-size: 24px;
+  text-align: center;
+}
+
+hr{
+  display: block;
+  margin-bottom: 30px;
+  height: 2px;
+  width: 100%;
+}
+
+/*animations*/
+@keyframes signInForm {
+  0%{
+    display: block;
+    z-index: 0;
+    transform: scale(0.6,0.6);
+  }
+
+   25%{
+    display: block;
+    z-index: 2;
+    transform: scale(1.2,1.2);
+  }
+
+   50%{
+    display: block;
+    z-index: 2;
+    transform: scale(1,1);
+  }
+}
+
+
+/****************
+Media Queiries
+***************/
+@media(min-width: 320px){
+  .welcome{
+    font-size: 1.5rem;
+  }
+
+  #formSignIn input[type=text]{
+    font-size: 1.5rem;
+    padding:10px;
+  }
+
+  #formSignIn input[type=email]{
+    font-size: 1.5rem;
+    padding: 10px;
+  }
+
+  .btn{
+    width: 100px;
+    margin-left: -50px;
+    font-size: 1rem;
+  }
+
+  .container{
+    font-size: 1.2rem;
+  }
+
+  .quizStyle{
+    width: 98%;
+
+  }
+
+  .quiz-questions{
+    width: 98%;
+    font-size: 1rem;
+  }
+
+  .quiz-q{
+    font-size: 1rem;
+    margin-bottom: -20px;
+  }
+}
+
+@media(min-width: 640px){
+  .welcome{
+    font-size: 3em;
+  }
+
+  #formSignIn input[type=text]{
+    font-size: 2rem;
+    padding: 20px;
+  }
+
+  #formSignIn input[type=email]{
+    font-size: 2rem;
+    padding: 20px;
+  }
+
+  .signIn-Form-Container{
+    width: 60%;
+  }
+
+  .quizStyle{
+    width: 98%;
+  }
+
+  .quiz-questions{
+    width: 60%;
+  }
+}
