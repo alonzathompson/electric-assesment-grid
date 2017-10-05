@@ -91,7 +91,7 @@ const postData = ()=>{
     })
   };
 
-  fetch("http://localhost:3500/finish",init)
+  fetch("https://eletrical-assesment-grid.herokuapp.com/finish",init)
     .then((res)=>{
     }).catch((res) => {
     });
