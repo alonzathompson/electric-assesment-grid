@@ -17,7 +17,7 @@ const transporter = nodemailer.createTransport({
 
 const helpOps = (name,dEmail,score)=>{
   return helpOptions = {
-            from: `Building knowledge <thompson0005@gmail.com`,
+            from: `Building knowledge <artruanworks@gmail.com>`,
             to: `<${dEmail}>`,
             subject: `Your quiz scores`,
             text: `Hello ${name}, we want to thank you for taking the time out,
@@ -36,7 +36,7 @@ const helpOps = (name,dEmail,score)=>{
                     <p style="text-align: center; margin-top: 20px; font-size: 20px">Thank You for wanting to take interest
                       in expanding your knowledge ${name} in electrical infrastructure.
                       By sharpening your skills in this area, it  will prepare you for
-                      general careers with elctric companies, or companies that work around electric such as excavation
+                      general careers with electric companies, or companies that work around electric such as excavation
                       and utility locating companies.
                     </P>
                   </div>`

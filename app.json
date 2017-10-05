@@ -1,0 +1,6 @@
+{
+  "name": "Basic Electric Grid Assesment",
+  "description": "This is a basic assessment for Electric Grid",
+  "repository": "https://github.com/alonzathompson/electric-assesment-grid",
+  "keywords": ["node", "express", "electric", "quiz", "assesment", "power grid", "vanilla js"]
+}

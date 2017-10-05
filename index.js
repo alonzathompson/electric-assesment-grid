@@ -25,7 +25,7 @@ app.get('/finish', (req,res)=>{
 
 app.post('/finish', (req, res) =>{
   const info = JSON.parse(req.body.info);
-  const score = `${req.body.score}%`;
+  const score = `${Math.floor(req.body.score)}%`;
   console.log(info, info.email, score);
 
   send.callTransporter(info.firstName,info.email,score);

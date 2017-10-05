@@ -93,9 +93,7 @@ const postData = ()=>{
 
   fetch("http://localhost:3500/finish",init)
     .then((res)=>{
-        console.log("sent data");
     }).catch((res) => {
-      console.log(res.err);
     });
 }
 
@@ -134,7 +132,6 @@ handleClicks(getSignIn, getForm);
 
 const checkEmpty = (val)=>{
   if(val === null || val === "undefined" || val === ""){
-    console.log("error: " + val + "is empty");
     return false;
   } else {
     return true;
@@ -142,17 +139,14 @@ const checkEmpty = (val)=>{
 }
 
 const displayError = (error)=>{
-  console.log(error.signup + " " + error);
   chDisplay(showError, "block");
   return showError.innerHTML = error + " not completed";
 }
 
 const checkName = (name)=>{
   if(checkEmpty(name) === true){
-    console.log('name good!')
     return true;
   } else {
-    console.log('name error');
     return false;
   }
 }
@@ -160,10 +154,8 @@ const checkName = (name)=>{
 const checkEmail = (email)=>{
  if(checkEmpty(email) === true){
    if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)){
-      console.log("email good!");
       return (true)
     } else {
-      console.log('email error!');
       return (false)
     }
   }
@@ -172,10 +164,8 @@ const checkEmail = (email)=>{
 const checkEin = (ein)=>{
   if(checkEmpty(ein) === true){
     if(ein.length > 4 && ein.length < 7){
-      console.log('ein good!')
       return (true)
     } else {
-      console.log('error');
       return (false)
     }
   }
@@ -217,7 +207,6 @@ proceed.onclick = function(e){
     localStorage.setItem("info", JSON.stringify(customerInfo));
     cinfo = JSON.parse(localStorage.getItem("info"));
     postInfo = JSON.stringify(customerInfo);
-    console.log(cinfo);
     return getAssesInfo();
   } else {
     return displayError("fields are required");
@@ -242,7 +231,6 @@ Handle Quiz
 let startQuiz = () => {
   const getQuizData = { quizData: "quizData"};
   history.pushState(getQuizData, "quizData", "quiz");
-  console.log('getQuiz working');
   chDisplay(quiz, 'block');
   chDisplay(assesInfo, "none");
 }
@@ -253,7 +241,6 @@ let addAnswer = (answer) => {
   qAnswers.push(answer);
 }
 
-console.log(QuizData);
 q.innerHTML = (qCount + 1) + ". " + QuizData[qCount].question;
 c1Text.innerHTML = QuizData[qCount].choices[0].a1;
 c2Text.innerHTML = QuizData[qCount].choices[1].a2;
@@ -301,18 +288,14 @@ getQuestion.onclick = function(e){
   addAnswer(chosen);
 
   //console.log(chose);
-  console.log(qAnswers);
+
   //console.log(question);
   c1.checked = false;
   c2.checked = false;
   c3.checked = false;
   c4.checked = false;
 
-  console.log(QuizData.length);
-  console.log(qCount);
-
   if(qCount === QuizData.length -1){
-    console.log('go to finish');
     getQuestion.setAttribute("value", "finish");
   }
 
@@ -326,7 +309,6 @@ Handle finish
 ******************/
 //handle quiz answers
 const getQuizAnswers = (arr)=>{
-    console.log("checking");
     return arr.map((item,i,a) => {
             //console.log(a[i].answer);
             return a[i].answer;
@@ -375,7 +357,6 @@ const getPercent = (num)=>{
 //handle displaying text
 const writeScore = (scr)=>{
   const yc = calcScore(scr);
-  console.log(yc);
   return showScore.innerHTML = `Your score: ${Math.floor(getPercent(yc))}%`;
 }
 
@@ -384,11 +365,9 @@ const writeScore = (scr)=>{
 const getFinish = ()=>{
   const finishData = { finishData: "finishData"};
   history.pushState(finishData, "finishData", "finish");
-  console.log('finish');
 
   localStorage.setItem("assesmentScore", JSON.stringify(qAnswers));
   score = JSON.parse(localStorage.getItem("assesmentScore"));
-  console.log(typeof score);
 
   const yourScore = testAnswers(getQuizAnswers(QuizData), score);
   postScore = JSON.stringify(getPercent(calcScore(yourScore)));
