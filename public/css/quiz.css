@@ -59,7 +59,7 @@ body{
       rgba(255,140,0, 0.45)
     ),
     /* bottom, image */
-    url(../images/cables.jpg);
+    url(../images/home-pic.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
