@@ -15,9 +15,6 @@ const getInput = (el)=>{
 const getChecked = (el)=>{
   return grabEl(el).checked;
 }
-/***************
-Data - variables
-***************/
 
 /***************************
 variables representing pages
@@ -115,9 +112,7 @@ const handleClicks = (el, cb) => {
     return cb();
   }
 }
-/*********************
-functions for storage
-**********************/
+
 /******************
 Handle SignUp form
 ******************/
@@ -287,9 +282,6 @@ getQuestion.onclick = function(e){
 
   addAnswer(chosen);
 
-  //console.log(chose);
-
-  //console.log(question);
   c1.checked = false;
   c2.checked = false;
   c3.checked = false;
@@ -359,8 +351,6 @@ const writeScore = (scr)=>{
   const yc = calcScore(scr);
   return showScore.innerHTML = `Your score: ${Math.floor(getPercent(yc))}%`;
 }
-
-
 
 const getFinish = ()=>{
   const finishData = { finishData: "finishData"};

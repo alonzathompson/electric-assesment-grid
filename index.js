@@ -32,6 +32,10 @@ app.post('/finish', (req, res) =>{
   res.send("got data ok");
 })
 
+app.get('*', function(req, res) {
+    res.redirect('/');
+});
+
 app.listen(port, ()=>{
   console.log('listening on port 3500');
 });
