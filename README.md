@@ -5,5 +5,4 @@ looking to test their knowledge on the basics of the electrical grid system.This
 the quiz done with a basic server and vanilla js before refactoring.This was to explore more of javascript and css
 without frameworks to get a better grasp on what the frameworks are actually manipulating.
 
-next steps are to modularize the js file, write test
 
